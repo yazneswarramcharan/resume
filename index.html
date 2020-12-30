@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>One page project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   
+    <ul> 
+        <li class="profile">MY PROFILE</li>
+        <li style="font-size: 18px;"><a href="a.html">HOME</a></li>
+       <li class="skills" style="font-size: 18px;">
+          <a href="javascript:void(0)" class="skillsbtn">SKILLS</a>
+          <div class="skills-content">
+            <a href="#">HTML 5</a>
+            <a href="#">CSS 3</a>
+            <a href="#">JAVASCRIPT</a>
+            <a href="#">C</a>
+            <a href="#">JAVA</a>
+            <a href="#">PYTHON 3.8</a>
+          </div>
+
+        </li>
+        <li style="font-size: 18px;"><a href="tel:5554280940">CONTACT</a></li>
+        
+      </ul>
+      <div class="icon-bar">
+        <a href="https://www.facebook.com/yazneswararamcharan/" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="https://twitter.com/RamCharanRavuri" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="https://github.com/yazneswarramcharan" class="github"><i class="fa fa-github"></i></a> 
+      </div>
+        <div class="msg-container">
+            <div id="slider">
+                <div class="msg-coll">
+                    <h1> I'm Ram Charan</h1>
+                    <pre>
+ This is my official portfolio website 
+ to showcase my all works related to
+ web development and UI design
+                    </pre>    
+                    <a href="ramresume.pdf">Download Resume</a>
+                </div>
+                <div class="msg-coll">
+                    <h1>Qualification</h1>
+                    <pre>
+ Bachelor Of Technology
+                    </pre>
+                </div>
+                <div class="msg-colls">
+                    <h1>Specialisation</h1>
+                    <pre>
+ Mechanical Engineering 
+                    </pre>
+                </div>
+                
+            </div>
+        </div>
+        <div class="controller">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="active"></div>
+        </div>
+    <script>
+        var slider = document.getElementById('slider');
+        var active = document.getElementById('active');
+        var line1 = document.getElementById('line1');
+        var line2 = document.getElementById('line2');
+        var line3 = document.getElementById('line3');
+
+        line1.onclick = function(){
+            slider.style.transform='translate(0)';
+            active.style.top='0px'
+        }
+        line2.onclick = function(){
+            slider.style.transform='translate(-50%)';
+            active.style.top='100px'
+        }
+        line3.onclick = function(){
+            slider.style.transform='translate(-100%)';
+            active.style.top='200px'
+        }
+    </script>
+</body>
+    
+</html>
